@@ -1,0 +1,321 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none !important; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400; }
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+a,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  line-height: 1; }
+
+button,
+input,
+textarea {
+  outline: none !important;
+  -webkit-transition: all .125s;
+  transition: all .125s;
+  font-family: inherit; }
+
+input[type=text]:focus,
+input[type=file]:focus,
+input[type=checkbox]:focus,
+input[type=radio]:focus,
+input:active {
+  outline: none !important; }
+
+::-webkit-input-placeholder {
+  color: #222; }
+
+::-moz-placeholder {
+  color: #222; }
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #222; }
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #222; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+html {
+  height: 100%;
+  scroll-behavior: smooth; }
+
+svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: auto; }
+
+rect,
+circle,
+svg,
+path {
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  a:hover {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+i {
+  line-height: 100%; }
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: inherit;
+  font-size: 1em; }
+
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 2; }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none; }
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+html {
+  width: 100%; }
+  html.fixed-body {
+    overflow-y: hidden; }
+
+.m-page {
+  width: calc(100vw - (100vw - 100%));
+  overflow-x: hidden;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  color: #363c4d;
+  font-size: calc(1000px * (16 / 1000)); }
+  @media screen and (max-width: 1000px) {
+    .m-page {
+      font-size: calc(100vw * (16 / 1000)); } }
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.875em; }
+
+a:hover {
+  color: #992e2e; }
+
+@media screen and (max-width: 768px) {
+  .m-page {
+    font-size: calc(100vw * (16 / 660)); }
+
+  .container {
+    padding: 0 1.25em; } }
+.m-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all ease-out .225s;
+  transition: all ease-out .225s;
+  padding: 0 5.75em;
+  height: 4.125em;
+  border-radius: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em; }
+  .m-btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .m-btn span {
+    font-size: 2.5em; }
+
+.m-btn-red {
+  background-color: #d62b2b;
+  color: #ffffff; }
+  .m-btn-red:hover {
+    background-color: #ad2121;
+    color: #ffffff; }
+
+.main {
+  background-image: url(../images/main_bg.jpg);
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat; }
+  .main__inner {
+    padding: 7.625em 0 6.25em;
+    max-width: 41em; }
+  .main__img {
+    display: none; }
+
+.h1,
+.h2 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #992e2e; }
+
+.h2 {
+  font-size: 2em; }
+
+.advantages {
+  padding: 3.5em 0; }
+  .advantages__items {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2em;
+    margin-top: 2.1875em; }
+    .advantages__items:first-child {
+      margin-top: 0; }
+
+.advantage-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 57.5em; }
+  .advantage-item__icon {
+    width: 3.125em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 1.625em;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+    .advantage-item__icon img {
+      max-width: 100%;
+      max-height: 100%; }
+  .advantage-item__text {
+    font-size: 1.375em;
+    line-height: 1.2; }
+
+.advantages2 {
+  padding: 3.125em 0;
+  background-color: #ededed; }
+  .advantages2 .h2 {
+    text-align: center; }
+
+.footer {
+  background-color: #363c4d; }
+  .footer__inner {
+    padding: 5.25em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+@media screen and (max-width: 768px) {
+  .main {
+    background-image: url(../images/main_bg2.jpg);
+    max-width: 100%; }
+    .main__inner {
+      padding: 8em 6em 10em 0;
+      position: relative; }
+    .main__img {
+      position: absolute;
+      display: block;
+      bottom: -3.25em;
+      right: -1em;
+      width: 17.25em; }
+
+  .h2 {
+    font-size: 2.5em; }
+
+  .advantages {
+    padding: 6.625em 0 3em; }
+    .advantages__items {
+      margin-top: 3em; }
+
+  .advantage-item__icon {
+    width: 3.75em; }
+  .advantage-item__text {
+    font-size: 1.875em; }
+
+  .advantages2 {
+    padding: 3.5em 0 3em; }
+
+  .footer__inner {
+    padding: 6em 0; }
+
+  .m-btn {
+    padding: 0 5.625em;
+    height: 4.5em; } }
+
+/*# sourceMappingURL=style.css.map */

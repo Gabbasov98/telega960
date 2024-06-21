@@ -1,0 +1,160 @@
+.m-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-out .225s;
+  padding: 0 5.75em;
+  height: 4.125em;
+  border-radius: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  &:focus {
+    box-shadow: none;
+  }
+  span{
+    font-size: 2.5em;
+  }
+}
+
+.m-btn-red{
+  background-color: #d62b2b;
+  color: #ffffff;
+  &:hover{
+    background-color: darken(#d62b2b,10%);
+    color: #ffffff;
+  }
+}
+
+.main{
+  background-image: url(../images/main_bg.jpg);
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  &__inner{
+    padding: 7.625em 0 6.25em;
+    max-width: 41em;
+  }
+  &__img{
+    display: none;
+  }
+}
+
+.h1,
+.h2{
+  font-size: 2.5em;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.h2{
+  font-size: 2em;
+}
+
+.advantages{
+  padding: 3.5em 0;
+  &__items{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2em;
+    margin-top: 2.1875em;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+}
+
+.advantage-item{
+  display: flex;
+  align-items: center;
+  max-width: 57.5em;
+  &__icon{
+    width: 3.125em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.625em;
+    flex-shrink: 0;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  &__text{
+    font-size: 1.375em;
+    line-height: 1.2;
+  }
+}
+
+.advantages2{
+  padding: 3.125em 0;
+  background-color: #ededed;
+  .h2{
+    text-align: center;
+  }
+}
+
+.footer{
+  background-color: #363c4d;
+  &__inner{
+    padding: 5.25em 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .main{
+    background-image: url(../images/main_bg2.jpg);
+    max-width: 100%;
+    &__inner{
+      padding: 8em 6em 10em 0;
+      position: relative;
+    }
+    &__img{
+      position: absolute;
+      display: block;
+      bottom: -3.25em;
+      right: -1em;
+      width: 17.25em;
+    }
+  }
+
+  .h2{
+    font-size: 2.5em;
+  }
+
+  .advantages{
+    padding: 6.625em 0 3em;
+    &__items{
+      margin-top: 3em;
+    }
+  }
+
+  .advantage-item{
+    &__icon{
+      width: 3.75em;
+    }
+    &__text{
+      font-size: 1.875em;
+    }
+  }
+
+  .advantages2{
+    padding: 3.5em 0 3em;
+  }
+
+  .footer{
+    &__inner{
+      padding: 6em 0;
+    }
+  }
+
+  .m-btn {
+    padding: 0 5.625em;
+    height: 4.5em;
+  }
+}
